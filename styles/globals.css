@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/HelveticaNeueCyr-Roman.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/HelveticaNeueCyr-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/HelveticaNeueCyr-Bold.ttf) format("truetype");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+  border-color: #fff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-slate-300 text-[15px] h-11 px-6 rounded-lg font-medium bg-[#090D15] hover:cursor-pointer flex items-center justify-center flex-1 md:flex-none;
+  }
+
+  .btn-primary {
+    @apply bg-opacity-80 hover:bg-opacity-100;
+  }
+
+  .btn-neutral {
+    @apply bg-opacity-0 hover:bg-opacity-60;
+  }
+
+  .section-heading {
+    @apply text-white font-semibold col-span-12 mb-8 md:mb-12 text-sm uppercase pl-4 border-l border-slate-700;
+  }
+
+  .horizontal-rule {
+    @apply mb-6 border-slate-700 max-w-[512px];
+  }
+
+  .section {
+    @apply py-12 md:py-16;
+  }
+}
