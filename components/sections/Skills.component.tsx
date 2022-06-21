@@ -1,6 +1,6 @@
 import { Tooltip } from "@chakra-ui/react";
-import Image from "next/image";
 import { Skill } from "../../types";
+import BlurImage from "../BlurImage.component";
 import Section from "../Section.component";
 
 const Skills = ({ skills }: { skills: Skill[] }) => {
@@ -20,7 +20,7 @@ const Skills = ({ skills }: { skills: Skill[] }) => {
               label={skill.title}
             >
               <div className="relative h-12 w-12 col-span-6 sm:col-span-4 md:col-span-3 flex">
-                <Image src={skill.src} alt={skill.title} layout="fill" objectFit="contain" />
+                <BlurImage src={skill.src} alt={skill.title} layout="fill" objectFit="contain" />
               </div>
             </Tooltip>
           );
