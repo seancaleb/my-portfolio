@@ -2,6 +2,16 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+::-moz-selection {
+  color: #121212;
+  background: #aaa;
+}
+
+::selection {
+  color: #121212;
+  background: #aaa;
+}
+
 @font-face {
   font-family: "HelveticaNeue";
   font-style: normal;
