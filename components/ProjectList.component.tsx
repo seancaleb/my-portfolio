@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Project } from "../types";
 
 type ProjectListProps = {
@@ -37,10 +38,16 @@ function ProjectItem({ project }: ProjectItemProps) {
         <p className="text-slate-500 mb-6">{project.description}</p>
 
         <div className="flex gap-2">
-          <a href={project.link} rel="noreferrer" target={"_blank"} className="btn btn-primary">
-            Live demo
-          </a>
-          <a className="btn btn-neutral">Github</a>
+          <Link href={project.link}>
+            <a target="_blank" className="btn btn-primary">
+              Live demo
+            </a>
+          </Link>
+          <Link href={project.githubLink}>
+            <a target="_blank" className="btn btn-neutral">
+              Github
+            </a>
+          </Link>
         </div>
       </div>
     </div>

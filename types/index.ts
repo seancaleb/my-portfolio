@@ -19,4 +19,5 @@ export type Project = {
   alt: string;
   link: string;
   image: Image;
+  githubLink: string;
 };

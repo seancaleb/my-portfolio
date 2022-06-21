@@ -16,6 +16,7 @@ const projects: Project[] = [
       ...crypto,
       mainSrc: "/projects/crypto.png",
     },
+    githubLink: "https://github.com/seancaleb/sn-crypto",
   },
   {
     id: nanoid(),
@@ -28,6 +29,7 @@ const projects: Project[] = [
       ...ecommerce,
       mainSrc: "/projects/ecommerce.png",
     },
+    githubLink: "https://github.com/seancaleb/sn-commerce",
   },
   {
     id: nanoid(),
@@ -40,6 +42,7 @@ const projects: Project[] = [
       ...movie,
       mainSrc: "/projects/movie.png",
     },
+    githubLink: "https://github.com/seancaleb/sn-movie-react-app",
   },
 ];
 
