@@ -13,14 +13,11 @@ const Header = () => {
           <a className="text-lg font-medium text-white">SNCLB</a>
         </Link>
 
-        <a
-          href="https://github.com/seancaleb/my-portfolio"
-          rel="noreferrer"
-          target="_blank"
-          className="flex items-center gap-4"
-        >
-          <GithubOutlined className="text-white text-2xl" />
-        </a>
+        <Link href="https://github.com/seancaleb/my-portfolio">
+          <a className="flex items-center gap-4">
+            <GithubOutlined className="text-white text-2xl" />
+          </a>
+        </Link>
       </motion.div>
     </header>
   );
