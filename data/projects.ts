@@ -29,7 +29,7 @@ const projects: Project[] = [
       ...ecommerce,
       mainSrc: "/projects/ecommerce.png",
     },
-    githubLink: "https://github.com/seancaleb/sn-commerce",
+    githubLink: "https://github.com/seancaleb/sn-commerce-react",
   },
   {
     id: nanoid(),
