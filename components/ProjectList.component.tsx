@@ -34,6 +34,9 @@ function ProjectItem({ project }: ProjectItemProps) {
           layout="fill"
           objectFit="cover"
           objectPosition="top left"
+          priority
+          placeholder="blur"
+          blurDataURL={`/_next/image?url=${project.image.mainSrc}&w=8&q=70`}
         />
       </div>
 
