@@ -38,16 +38,12 @@ function ProjectItem({ project }: ProjectItemProps) {
         <p className="text-slate-500 mb-6">{project.description}</p>
 
         <div className="flex gap-2">
-          <Link href={project.link}>
-            <a target="_blank" className="btn btn-primary">
-              Live demo
-            </a>
-          </Link>
-          <Link href={project.githubLink}>
-            <a target="_blank" className="btn btn-neutral">
-              Github
-            </a>
-          </Link>
+          <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-primary">
+            Live demo
+          </a>
+          <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn btn-neutral">
+            Github
+          </a>
         </div>
       </div>
     </div>
