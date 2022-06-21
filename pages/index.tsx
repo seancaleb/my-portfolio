@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
-import { About, GradientBlur, Header, Hero, Main, Projects, Skills } from "../components";
+import { About, GradientBlur, Hero, Main, Projects, Skills } from "../components";
 import { Project, Skill } from "../types";
 import { loadSkills, loadProjects } from "../utils";
 
@@ -15,14 +15,12 @@ const Home = ({ skills, projects }: InferGetStaticPropsType<typeof getStaticProp
       <Head>
         <title>Home — SNCLB</title>
       </Head>
-      <Header />
-      <Main>
-        <GradientBlur />
+      <>
         <Hero />
         <About />
         <Skills skills={skills} />
         <Projects projects={projects} />
-      </Main>
+      </>
     </>
   );
 };
