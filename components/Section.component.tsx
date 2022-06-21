@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { transition } from "../data/framer";
 
 type SectionProps = {
   children: React.ReactNode;
@@ -20,17 +21,14 @@ export default Section;
 
 const animation = {
   initial: {
-    y: 15,
+    y: 30,
     opacity: 0,
   },
   whileInView: { y: 0, opacity: 1 },
-  transition: {
-    type: "tween",
-    ease: [0.6, -0.05, 0.01, 0.99],
-  },
+  transition,
   viewport: {
     once: true,
-    amount: 0.5,
+    amount: 0.15,
     margin: "100px 100px 100px 100px",
   },
 };

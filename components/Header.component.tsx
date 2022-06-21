@@ -1,6 +1,7 @@
 import { GithubOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { transition } from "../data/framer";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
         </Link>
 
         <Link href="https://github.com/seancaleb/my-portfolio">
-          <a className="flex items-center gap-4">
+          <a target="_blank" className="flex items-center gap-4">
             <GithubOutlined className="text-white text-2xl" />
           </a>
         </Link>
@@ -27,15 +28,12 @@ export default Header;
 
 const animation = {
   initial: {
-    y: -15,
+    y: -30,
     opacity: 0,
   },
   animate: {
     y: 0,
     opacity: 1,
   },
-  transition: {
-    type: "tween",
-    ease: [0.6, -0.05, 0.01, 0.99],
-  },
+  transition,
 };
