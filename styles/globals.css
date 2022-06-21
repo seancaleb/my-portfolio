@@ -78,7 +78,7 @@ html {
 
 @layer components {
   .btn {
-    @apply text-slate-300 text-[15px] h-11 px-6 rounded-lg font-medium bg-[#090D15] hover:cursor-pointer flex items-center justify-center flex-1 md:flex-none;
+    @apply text-slate-300 text-[15px] h-11 px-6 rounded-lg font-medium bg-[#090D15] hover:cursor-pointer flex items-center justify-center flex-1 md:flex-none hover:shadow-md;
   }
 
   .btn-primary {
