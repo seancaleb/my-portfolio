@@ -25,7 +25,7 @@ function ProjectItem({ project }: ProjectItemProps) {
   return (
     <motion.div
       {...animation}
-      className="col-span-12 sm:col-span-6 bg-[#131B2B] shadow-lg rounded-lg overflow-clip"
+      className="col-span-12 sm:col-span-6 bg-[#131B2B] shadow-md rounded-lg overflow-clip"
     >
       <div className="relative h-64 w-full">
         <BlurImage
