@@ -1,5 +1,6 @@
 import { GithubOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
         {...animation}
         className="h-full max-w-5xl mx-auto flex items-center justify-between px-4 md:px-6"
       >
-        <h2 className="text-lg font-medium text-white">SNCLB</h2>
+        <Link href="/">
+          <a className="text-lg font-medium text-white">SNCLB</a>
+        </Link>
 
         <a
           href="https://github.com/seancaleb/my-portfolio"

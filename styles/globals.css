@@ -43,6 +43,11 @@
   border-color: #fff;
 }
 
+.anticon {
+  display: flex;
+  align-items: center;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
