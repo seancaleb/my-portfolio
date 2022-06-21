@@ -7,24 +7,22 @@ const About = () => {
       <h4 className=" section-heading">About</h4>
       <div className="flex flex-col gap-6 col-span-12 md:col-span-9 mb-16">
         <p className="text-slate-500 text-lg">
-          Sean is a self-taught front end developer specializing in React. He has a strong passion
-          on developing responsive web applications and user interfaces that offer the best
+          Sean is a self-taught <span className="underline">front-end</span> developer specializing
+          in React based in the <span className="underline">Philippines</span>. He has a strong
+          passion for developing responsive web applications and user interfaces that offer the best
           experience for users.
         </p>
         <p className="text-slate-500 text-lg">
-          He is currently seeking any entry level position for a front end developer role to share
-          his knowledge and help contribute to an existing codebase. At the same time, he also wants
-          to learn best practices from senior devs.
+          At the moment, he is either learning backend programming or improving his front-end skill
+          set. He is also open to any front-end role where he can use his skills to help contribute
+          to an existing codebase and at the same time, learn best practices from experienced
+          developers.
         </p>
 
         <div className="flex flex-col gap-2 mt-4">
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-6 items-center">
             <MailOutlined className="icon" />
-            <p className="text-slate-300 text-lg">scmubias@gmail.com</p>
-          </div>
-          <div className="flex gap-4 items-center">
-            <HomeOutlined className="icon" />
-            <p className="text-slate-300 text-lg">Rizal, Philippines</p>
+            <p className="text-slate-300 text-lg">snclbmnzubs@gmail.com</p>
           </div>
         </div>
       </div>

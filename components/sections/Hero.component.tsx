@@ -11,8 +11,8 @@ const Hero = () => {
 
         <hr className="horizontal-rule" />
         <p className="text-lg text-slate-500 max-w-[512px]">
-          A developer with strong passion in developing responsive web apps and creating reusable
-          user interfaces.
+          A developer with strong passion in developing responsive web applications and creating
+          reusable user interfaces.
         </p>
       </div>
     </Section>
